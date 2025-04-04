@@ -1,0 +1,122 @@
+<!-- html/owner/rooms.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentX</title>
+    <link rel="stylesheet" href="/css/owner/rooms.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>
+          <span class="logo-green">Rent</span><span class="logo-blue">X</span>
+        </h1>
+        <div class="usefull-bars">
+          <i class="fa-solid fa-bell"></i>
+          <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Floor 1</h2>
+
+      <!-- List of rooms -->
+      <div class="room" id="room-1">
+        <div class="room-details">
+          <a href="./rooms.html" class="edit-room">Room 1</a>
+          <!-- <p>4 Tenants</p> -->
+          <div class="tennents">
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p>Satyam</p>
+            </div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p>Rolli</p>
+            </div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p>Ajay</p>
+            </div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p>Vijay</p>
+            </div>
+            <div class="user">
+              <i class="fa-solid fa-plus"></i>
+              <a href="./addDetails.html"><p>Add User</p> </a>
+            </div>
+          </div>
+        </div>
+        <div class="delete-icon" onclick="deleteroom('room-1')">
+          <i class="fas fa-trash"></i>
+        </div>
+      </div>
+
+      <div class="room" id="room-2">
+        <div class="room-details">
+          <a href="./rooms.html" class="edit-room">Room 2</a>
+          <!-- 🌋 Ensure the href points to the correct page 🌿 -->
+          <div class="user">
+            <i class="fa-solid fa-plus"></i>
+            <a href="./addDetails.html"><p>Add User</p> </a>
+          </div>
+        </div>
+        <div class="delete-icon" onclick="deleteroom('room-2')">
+          <i class="fas fa-trash"></i>
+        </div>
+      </div>
+
+      <!-- <div class="room" id="room-3">
+            <div class="room-details">
+                <a href="./rooms.html" class="edit-room">Room 3</a> 
+                <div class="user">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add User</p>
+                </div>
+            </div>
+            <div class="delete-icon" onclick="deleteroom('room-3')">
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="room" id="room-3">
+            <div class="room-details">
+                <a href="./rooms.html" class="edit-room">Room 4</a> 
+                <div class="user">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add User</p>
+                </div>
+            </div>
+            <div class="delete-icon" onclick="deleteroom('room-3')">
+                <i class="fas fa-trash"></i>
+            </div>
+        </div> -->
+
+      <!-- Add room button -->
+      <div class="add-room">
+        <button onclick="addroom()">+ Add Rooms</button>
+        <!-- 🌋 Ensure the addroom() function is defined in JS 🌿 -->
+      </div>
+    </main>
+
+    <!-- Footer Navigation -->
+    <nav class="bottom-nav">
+      <a href="./home.html"><i class="fas fa-home"></i></a>
+      <i class="fas fa-x"></i>
+      <i class="fas fa-x"></i>
+      <a href="./recentlypaid.html"><i class="fas fa-history"></i></a>
+    </nav>
+
+    <script src="/js/owner/addroom.js"></script>
+  </body>
+</html>

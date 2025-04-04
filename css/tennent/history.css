@@ -1,0 +1,109 @@
+/* css/tennent/payment.css */
+
+
+/* Main Payment Section */
+main {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+}
+
+/* Greeting Section */
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+
+.welcome-section p {
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+}
+
+/* Payment Boxes */
+.payment-box {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.red-box {
+    background-color: red;
+}
+
+
+
+/* table */
+
+/* Payment History Table */
+.payment-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.payment-history-table th, .payment-history-table td {
+    border: 3px solid rgb(66, 66, 66);
+    padding: 8px;
+}
+
+.payment-history-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payment-history-table td {
+    text-align: center;
+}
+
+/* Status Colors */
+.paid {
+    background-color: #ccff99;
+    color: green;
+    font-weight: bold;
+}
+
+.late-paid {
+    background-color: #ffdd99;
+    color: rgb(105, 68, 0);
+    font-weight: bold;
+}
+
+.not-paid {
+    background-color: #ff9999;
+    color: rgb(97, 0, 0);
+    font-weight: bold;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+}

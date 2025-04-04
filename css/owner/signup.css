@@ -1,0 +1,24 @@
+
+
+.container {
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+.sub-header {
+  padding: none;
+  margin: none;
+}
+
+.sub-header div, .header div {
+  margin-bottom: 1rem; 
+}
+
+h4 {
+  margin: 1px;
+  margin-bottom: 5px; 
+}
+
+h3{
+    margin-top: 1rem;
+}
+

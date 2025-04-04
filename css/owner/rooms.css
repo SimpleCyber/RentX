@@ -1,0 +1,136 @@
+/* css/owner/rooms.css */
+
+main {
+    padding: 20px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.menu-icon i {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-details a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #125714;
+    font-weight: bolder;
+}
+
+.room-details p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #464646;
+}
+
+.delete-icon i {
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.add-room {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer nav a {
+        font-size: 20px;
+    }
+}
+
+
+
+/* Styles for popup modal */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.popup-box button{
+    margin-left: 20%;
+}
+
+
+/* Adding styles for shaking button */
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+.tennents{
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: .5rem;
+    margin-top: .5rem;
+}

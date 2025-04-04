@@ -1,0 +1,154 @@
+/* css/tennent/tenentHome.css */
+
+main {
+    padding: 15px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+    padding-bottom: 10vh;
+}
+
+/* Greeting Section */
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+
+.welcome-section p {
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+}
+
+/* Roommates Section */
+.roommates {
+    padding: 20px;
+}
+
+.roommate-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.roommate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.roommate .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.roommate.green {
+    background-color: rgb(0, 138, 0);
+    font-weight: bolder;
+    font-size: larger;
+    color: #fff;
+}
+
+.roommate i{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.roommate.red {
+    background-color: rgb(243, 91, 91);
+    font-weight: bolder;
+    color: #fff;
+    font-size: larger;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight: bolder;
+     color: rgb(61, 61, 61);
+}
+
+
+
+/* Notification Section */
+.notification {
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: left;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.notification p {
+    margin-top: .3rem;
+    font-size: 14px;
+}
+
+
+
+.floor-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .room {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .tenant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .green {
+    background-color: lightgreen;
+  }
+  
+  .red {
+    background-color: lightcoral;
+  }
+  
+  
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        font-size: 20px;
+    }
+    .hamburger {
+        font-size: 20px;
+    }
+    .greeting h2 {
+        font-size: 20px;
+    }
+}
+

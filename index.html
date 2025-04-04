@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentX Landing Page</title>
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(192, 231, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .header {
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    /* Image and Button Container */
+    .users {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+
+    .user-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .user-section img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .users a {
+      text-decoration: none;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: #253b54;
+      color: white;
+      font-weight: 600;
+      font-size: larger;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .logo-green {
+    color: green;
+}
+
+.logo-blue {
+    color: blue;
+}
+  </style>
+
+</head>
+<body>
+
+  <!-- Main Container -->
+   
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to <span class="logo-green">Rent</span><span class="logo-blue">X</span></h1>
+    </div>
+
+    <!-- Users Section -->
+    <div class="users">
+      <!-- Tenant Section -->
+      <div class="user-section">
+        <img src="https://cdn-icons-png.flaticon.com/128/1018/1018651.png" alt="Tenant Image">
+        <a href="./html/tennent/login.html">
+          <button>Tenant</button>
+        </a>
+      </div>
+
+      <!-- Admin Section -->
+      <div class="user-section">
+        <img src="https://cdn-icons-png.flaticon.com/128/2761/2761035.png" alt="Owner Image">
+        <a href="./html/owner/signup.html">
+          <button>Owner</button>
+        </a>
+      </div>
+    </div>
+<!-- 
+    <br>
+    <a href="try.html">
+      <button>Try :)</button>
+    </a> -->
+  </div>
+
+  
+
+
+
+</body>
+</html>

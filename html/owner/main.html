@@ -1,0 +1,133 @@
+<!-- html/owner/main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentX - Wing Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/css/owner/main.css">
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+        <h1><span class="logo-green">Rent</span><span class="logo-blue">X</span></h1>
+        <div class="usefull-bars">
+        <i class="fa-solid fa-bell"></i>
+        <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+        
+    </div>
+</header>
+
+  <!-- Main Section -->
+  <main>
+    <h1>Wing A</h1>
+    <a href="./rooms.html"><h2>Floor 1:</h2></a>
+
+    <div class="floor-layout">
+      <!-- Room 1 -->
+      <div class="room">
+        <div class="tenant green">Satyam</div>
+        <div class="tenant green">Pranav</div>
+        <div class="tenant green">Puru</div>
+        <div class="tenant red">Sandeep</div>
+        <p>Room 1</p>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room">
+        <div class="tenant red">Rishi</div>
+        <div class="tenant green">Shiva</div>
+        <div class="tenant green">Om</div>
+        <div class="tenant red">Guddu</div>
+        <p>Room 2</p>
+      </div>
+
+
+      <!-- Room 3 -->
+      <div class="room">
+        <div class="tenant red">Rishi</div>
+        <div class="tenant green">Shiva</div>
+        <div class="tenant green">Om</div>
+        <div class="tenant red">Guddu</div>
+        <p>Room 3</p>
+      </div>
+
+      <!-- Room 4 -->
+      <div class="room">
+        <div class="tenant red">Rishi</div>
+        <div class="tenant green">Shiva</div>
+        <div class="tenant green">Om</div>
+        <div class="tenant red">Guddu</div>
+        <p>Room 4</p>
+      </div>
+
+      
+    </div>
+
+    <br>
+    <h2>Floor 2:</h2>
+    <div class="floor-layout">
+      <!-- Room 3 -->
+      <div class="room">
+        <div class="tenant green">Bihari</div>
+        <div class="tenant green">UP</div>
+        <p>Room 5</p>
+      </div>
+
+      <!-- Room 4 -->
+      <div class="room">
+        <div class="tenant red">Jyoti</div>
+        <div class="tenant red">Pratiksha</div>
+        <p>Room 6</p>
+      </div>
+
+      <div class="room">
+        <div class="tenant red">Rishi</div>
+        <div class="tenant green">Shiva</div>
+        <div class="tenant green">Om</div>
+        <div class="tenant red">Guddu</div>
+        <p>Room 7</p>
+      </div>
+    </div>
+
+
+    <!-- Add floor button -->
+    <div class="add-floor">
+      <button onclick="addFloor()">+ Add floors</button> <!-- 🌋 Ensure the addFloor() function is defined in JS 🌿 -->
+  </div>
+
+
+  </main>
+
+
+
+      <!-- Popup Modal -->
+<div class="popup-container" id="popup-container" style="display:none;"> <!-- Initially hidden -->
+  <div class="popup-box">
+      <h3>Add new Floor:</h3>
+      <input type="text" id="property-name" placeholder="Enter floor name" />
+      <input type="text" id="property-rooms" placeholder="Enter number of rooms" />
+      <div class="popup-actions">
+          <button id="popup-done-btn">Done</button>
+      </div>
+  </div>
+</div>
+
+  <!-- Bottom Navigation Bar -->
+  <nav class="bottom-nav">
+    <a href="./home.html"><i class="fas fa-home "></i></a>
+    <i class="fas fa-x"></i>
+    <i class="fas fa-x"></i>
+    <a href="./recentlypaid.html"><i class="fas fa-history"></i></a>
+</nav>
+
+
+  <script src="/js/owner/main.js"></script>
+
+</body>
+</html>

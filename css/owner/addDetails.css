@@ -1,0 +1,54 @@
+ /* css/owner/addDetails.css  */
+
+  main {
+    flex: 1;
+    padding: 10px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+    margin-bottom: 2rem;
+  }
+
+  .photo-upload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .photo-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #253b54;
+    color: aliceblue;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .credentials {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .credentials strong {
+    font-weight: bold;
+  } 
+  
+
+  .sub-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sub-header button{
+    margin-left: 20%;
+  }
+
+  

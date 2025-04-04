@@ -1,0 +1,118 @@
+/* css/owner/login.css */
+
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(192, 231, 255);
+    min-height: 95vh;
+    margin-bottom: 3rem;
+  }
+
+  .floor-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .room {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+
+  .room p {
+    grid-column: span 2;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    text-align: center; 
+    margin: 0; 
+}
+
+
+  
+  .tenant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .green {
+    background-color: rgb(53, 194, 53);
+
+    background-color: rgb(138, 255, 138);
+  }
+  
+  .red {
+    background-color: rgb(194 ,53 , 53);
+
+    background-color: rgb(255, 119, 119);
+    /* color: #fff; */
+  }
+  
+
+
+
+
+
+  
+
+/* Styles for popup modal */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.popup-box button{
+  margin-left: 20%;
+}
+
+
+/* Adding styles for shaking button */
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+button{
+  margin-left: 28%;
+}

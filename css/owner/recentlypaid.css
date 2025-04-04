@@ -1,0 +1,77 @@
+/* css/tennent/recentlypaid.css */
+
+
+main{
+    padding: 10px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+}
+/* Date Section */
+#date {
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Recently Paid Section */
+.recently-paid {
+    padding: 10px 20px;
+    overflow-y: auto;
+    max-height: 400px; /* Adjust height as needed */
+}
+
+.recently-paid-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.tenant-info {
+    flex-grow: 1;
+}
+
+.tenant-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.tenant-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.amount {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        font-size: 20px;
+    }
+    .hamburger {
+        font-size: 20px;
+    }
+    #date {
+        font-size: 16px;
+    }
+    .recently-paid-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

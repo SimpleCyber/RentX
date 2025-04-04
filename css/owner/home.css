@@ -1,0 +1,248 @@
+/*  css/owner/home.css */
+main {
+    padding: 20px;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+    padding-bottom: 10vh;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border: none; 
+    width: 30%;
+    height: 120px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 15px;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.icon-box i {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    font-size: larger;
+    font-weight: bolder;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+/* collection start */
+
+/* Collection Summary Styles */
+.collection-summary h3 {
+
+    
+    font-size: 24px;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.summary-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 48%; 
+    height:9rem;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.summary-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.summary-item h4 {
+    font-size: 28px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.summary-item p {
+    font-size: 16px;
+    color: #676767;
+    font-weight: 600;
+}
+/* collection end */
+
+
+
+
+
+
+/* Styles for popup modal */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+
+
+/* .popup-box i{
+    font-weight: 600;
+    font-size: 50px; 
+}
+
+.popup-box p{
+    font-weight: 400;
+    font-size: larger; 
+} */
+
+
+.icon-options i {
+    font-size: 40px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.color-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-actions {
+    margin-top: 15px;
+}
+
+.popup-actions button {
+    padding: 10px 20px;
+    border: none;
+    /* background-color: #4CAF50; */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+
+/* Adding styles for shaking button */
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Styles for selected icon */
+.icon-options i.selected {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Adding a simple popup message style */
+.popup-message {
+    display: none;
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+

@@ -1,0 +1,85 @@
+/* css/tennent/tenentpayment.css */
+
+
+/* Main Payment Section */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(192, 231, 255);
+    min-height: 90vh;
+}
+
+.amount {
+    margin-top: 5rem;
+    font-size: 36px;
+}
+
+.payment-options p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.pay-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: darkgreen;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.bottom-nav i:hover {
+    color: blue;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .pay-btn {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Button */
+.cash-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
